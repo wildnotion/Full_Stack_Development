@@ -7,6 +7,7 @@ var logger = require('morgan');
 var indexRouter = require('./app_server/routes/index'); // Updated in Module Two
 var usersRouter = require('./app_server/routes/users'); // Updated in Module Two
 var travelRouter = require('./app_server/routes/travel'); // Added in Module Two
+var roomsRouter = require('./app_server/routes/rooms'); // Added in Module Three
 var handlebars = require('hbs'); // Added in Module Two
 
 var app = express();
@@ -28,6 +29,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/travel', travelRouter); // Added in Module Two
+app.use('/rooms', roomsRouter); // Added in Module Three
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
