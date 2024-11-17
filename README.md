@@ -7,4 +7,4 @@ Module One: Setting up MEAN tools and creating a static website (i.e., no dynami
 
 Module Two: Modifying the file structures to align with an MVC (model, view, controller) architecture, and updating calls for headers and footers to eliminate redundant text using the Handlebars (HBS) tool.
 
-Module Three: Added a JSON data folder and connections to it for replacing hard-coded data with for-each loops that can dynamically fill similarly formatted templates.
+Module Three: Adding a JSON data folder and connections to it for replacing hard-coded data with for-each loops that can dynamically fill similarly formatted templates.
