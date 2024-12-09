@@ -8,7 +8,11 @@ var indexRouter = require('./app_server/routes/index'); // Updated in Module Two
 var usersRouter = require('./app_server/routes/users'); // Updated in Module Two
 var travelRouter = require('./app_server/routes/travel'); // Added in Module Two
 var roomsRouter = require('./app_server/routes/rooms'); // Added in Module Three
+var apiRouter = require('./app_api/routes/index'); // Added in Module Five
 var handlebars = require('hbs'); // Added in Module Two
+
+// Bring in the database
+require('./app_api/models/db'); // Added in Module Five
 
 var app = express();
 
@@ -30,6 +34,7 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/travel', travelRouter); // Added in Module Two
 app.use('/rooms', roomsRouter); // Added in Module Three
+app.use('/api', apiRouter); // Added in Module Five
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
