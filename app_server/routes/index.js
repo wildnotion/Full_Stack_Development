@@ -1,9 +1,14 @@
-var express = require("express");
+var express = require('express');
 var router = express.Router();
+const ctrlMain = require('../controllers/main'); //Added in Module Two
 
 /* GET home page. */
-const ctrlMain = require("../controllers/main");
+router.get('/', ctrlMain.index); //Added in Module Two
 
-router.get("/", ctrlMain.index);
+/* Removed during Module Two
+router.get('/', function(req, res, next) {
+  res.render('index', { title: 'Express' });
+});
+*/
 
 module.exports = router;
