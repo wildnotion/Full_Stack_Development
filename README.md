@@ -12,3 +12,9 @@ Module Three: Adding a JSON data folder and connections to it for replacing hard
 Module Four: Implementing a MongoDB database with its NoSQL schema, and seeding its initial stored data using a JSON file.
 
 Module Five: Applying a RESTful API to access the database, and ensuring the website utilizes it.
+
+Module Six: Creating a single-page application (SPA) for administrators to add and edit trip details.
+
+Module Seven: Enhancing security through token authentication, which also acts as authorization to any user gaining access to the SPA for adding and editing trip information.
+
+Module Eight: Final updates to align and simplify some code, with minor fixes.
